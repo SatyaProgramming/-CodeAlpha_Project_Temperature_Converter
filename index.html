@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-Converter </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="main_Item">
+        <div>
+            <h1>Conversion Of Temperature Units</h1>
+        </div>
+        <div id="main">
+            <div>
+
+                <form action="">
+                    <div class="cart" id="left">
+                        <h3> Enter Temperature</h3>
+                        <div>Degree
+                            <input type="number" name="input" id="input" required>
+                            <select name="from" id="from">
+                                <option value="°C">°C</option>
+                                <option value="°F">°F</option>
+                                <option value="°K">°K</option>
+                            </select>
+                        </div>
+                        <div>Convert In
+                            <select name="convertTo" id="convertTo">
+                                <option selected value="Fahrenheit">Fahrenheit(°F)</option>
+                                <option value="Celsius">Celsius(°C)</option>
+                                <option value="Kelvin">Kelvin(°K)</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="convert" id="convert">
+                    </div>
+                </form>
+            </div>
+            <div class="cart" id="right">
+                <ion-icon name="thermometer-outline"></ion-icon>
+                <center>Output Will Appear Here</center>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
